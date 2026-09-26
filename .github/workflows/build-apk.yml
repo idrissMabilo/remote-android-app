@@ -18,11 +18,14 @@ jobs:
           distribution: temurin
           java-version: '17'
 
+      - name: Installer le SDK Android
+        uses: android-actions/setup-android@v3
+
       - name: Installer Gradle
         uses: gradle/actions/setup-gradle@v4
 
       - name: Compiler l'APK (debug)
-        run: gradle assembleDebug
+        run: gradle assembleDebug --stacktrace
         working-directory: .
 
       - name: Publier l'APK comme résultat téléchargeable
