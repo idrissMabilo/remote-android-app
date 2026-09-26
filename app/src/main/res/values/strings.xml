@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Remote Android</string>
+    <string name="accessibility_service_description">
+        Permet de recevoir des commandes (taps, glissements) depuis le PC de contrôle distant.
+        Ce service n\'envoie aucune donnée en dehors de la connexion que tu as toi-même configurée.
+    </string>
+</resources>
